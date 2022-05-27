@@ -1,0 +1,23 @@
+{
+  "name": "majibingo-v2",
+  "version": "1.0.0",
+  "description": "Backend for a bingo website for the twitch streamer Majijej",
+  "main": "index.js",
+  "scripts": {
+    "watch": "tsc -w",
+    "dev": "nodemon dist/index.js"
+  },
+  "author": "tomasitobambito",
+  "license": "ISC",
+  "devDependencies": {
+    "install": "^0.13.0",
+    "nodemon": "^2.0.16",
+    "npm": "^8.11.0",
+    "typescript": "^4.7.2"
+  },
+  "dependencies": {
+    "pg": "^8.7.3",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "^0.3.6"
+  }
+}

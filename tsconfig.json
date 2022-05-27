@@ -1,0 +1,29 @@
+{
+    "compilerOptions": {
+        "target": "ES6",
+        "module": "CommonJS",
+        "lib": [
+            "dom",
+            "es6",
+            "es2017",
+            "ESNext.AsyncIterable",
+        ],
+        "noImplicitAny": true,
+        "outDir": "./dist",
+        "strictNullChecks": true,
+        "strictFunctionTypes": true,
+        "noImplicitThis": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noImplicitReturns": true,
+        "noFallthroughCasesInSwitch": true,
+        "baseUrl": ".",
+    },
+    "exclude": [
+        "node_modules"
+    ],
+    "include": [
+        "./src/**/*.tsx",
+        "./src/**/*.ts"
+    ]
+}
