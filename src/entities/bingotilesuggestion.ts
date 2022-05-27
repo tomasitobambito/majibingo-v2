@@ -1,11 +1,11 @@
-import { Column, CreateDateColumn, Entity, PrimaryGeneratedColumn, UpdateDateColumn } from "typeorm"
+import { Column, CreateDateColumn, Entity, PrimaryGeneratedColumn, UpdateDateColumn } from "typeorm";
 
 @Entity()
-export class BingoTile {
+export class BingoTileSuggestion {
     @PrimaryGeneratedColumn()
     id: number;
 
-    @Column("text")
+    @Column('text')
     text: string;
 
     @Column({
@@ -13,13 +13,7 @@ export class BingoTile {
         nullable: true,
     })
     emote: string;
-
-    @Column({
-        type: 'text',
-        default: 'tomasito',
-    })
-    addedBy: string;
-
+    
     @CreateDateColumn()
     createdAt: Date;
 

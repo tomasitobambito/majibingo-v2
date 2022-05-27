@@ -1,6 +1,8 @@
 import 'reflect-metadata';
 import { DataSource } from 'typeorm';
 import { BingoTile } from './entities/bingotile';
+import { BingoTileSuggestion } from './entities/bingotilesuggestion';
+import { User } from './entities/user';
 
 const AppDataSource = new DataSource({
     type: 'postgres',
@@ -9,7 +11,7 @@ const AppDataSource = new DataSource({
     username: 'postgres',
     password: 'postgres',
     database: 'majibingo',
-    entities: [BingoTile],
+    entities: [BingoTile, BingoTileSuggestion, User],
     synchronize: true,
     logging: false,
 });
