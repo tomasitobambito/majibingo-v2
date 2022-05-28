@@ -1,7 +1,7 @@
-import { Column, CreateDateColumn, Entity, PrimaryGeneratedColumn, UpdateDateColumn } from "typeorm"
+import { BaseEntity, Column, CreateDateColumn, Entity, PrimaryGeneratedColumn, UpdateDateColumn } from "typeorm"
 
 @Entity()
-export class BingoTile {
+export class BingoTile extends BaseEntity{
     @PrimaryGeneratedColumn()
     id: number;
 
@@ -10,7 +10,7 @@ export class BingoTile {
 
     @Column({
         type: 'text',
-        nullable: true,
+        default: '',
     })
     emote: string;
 
