@@ -1,7 +1,7 @@
 import 'reflect-metadata';
 import { DataSource } from 'typeorm';
-import { BingoTile } from './entities/bingotile';
-import { BingoTileSuggestion } from './entities/bingotilesuggestion';
+import { Tile } from './entities/tile';
+import { Suggestion } from './entities/suggestion';
 import { User } from './entities/user';
 import express from 'express';
 import routes from './api/routes';
@@ -13,7 +13,7 @@ const AppDataSource = new DataSource({
     username: 'postgres',
     password: 'postgres',
     database: 'majibingo',
-    entities: [BingoTile, BingoTileSuggestion, User],
+    entities: [Tile, Suggestion, User],
     synchronize: true,
     logging: false,
 });

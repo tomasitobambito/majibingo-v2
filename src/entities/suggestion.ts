@@ -1,7 +1,7 @@
 import { BaseEntity, Column, CreateDateColumn, Entity, PrimaryGeneratedColumn, UpdateDateColumn } from "typeorm";
 
 @Entity()
-export class BingoTileSuggestion extends BaseEntity {
+export class Suggestion extends BaseEntity {
     @PrimaryGeneratedColumn()
     id: number;
 
